@@ -2,13 +2,14 @@ def start():
     while True:
         try:
             number = int(input("Enter a integer please: "))
+            #validate the the input value is valid
             if number < 0:
                 print("Negative integers are not valid, try again")
             else:
                 break
         except Exception as e:
                 print("Exception occurred: {}".format(e))
-
+    #validate conditional actions of this exercise 
     if number%2 > 0:
         print("Weird")
     elif number%2 == 0:
